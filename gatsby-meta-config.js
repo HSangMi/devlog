@@ -1,12 +1,12 @@
 module.exports = {
-  title: `Bee starter`,
+  title: `32's Dev.log`,
   description: `Blog posted about ...`,
-  author: `[Your Name]`,
+  author: `han32`,
   introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
+    github: `HSangMi`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -16,7 +16,7 @@ module.exports = {
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'HSangMi/devlog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
@@ -29,5 +29,4 @@ module.exports = {
   },
   ga: '0', // Add your google analytics tranking ID
   ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
-
 }
