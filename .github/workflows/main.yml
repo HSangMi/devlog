@@ -30,7 +30,7 @@ jobs:
       - name: npm init
         run: npm init -y
       - name: Run build task
-        run: npm run build --prefix-paths --if-present
+        run: npm run build --if-present
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
