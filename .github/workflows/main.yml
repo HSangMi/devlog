@@ -31,7 +31,6 @@ jobs:
         run: npm init -y
       - name: Run build task
         run: npm run build --if-present
-      - name: Deploy to Server
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
