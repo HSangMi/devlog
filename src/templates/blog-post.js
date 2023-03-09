@@ -13,6 +13,7 @@ import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
+import { Tags } from '../components/tags'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
@@ -33,15 +34,19 @@ export default ({ data, pageContext, location }) => {
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
+
       <PostTitle title={postTitle} />
+      <Tags post={post} />
       <PostDate date={date} />
       <PostContainer html={post.html} />
-      <SocialShare title={postTitle} author={author} />
+      {/* <SocialShare title={postTitle} author={author} /> */}
+
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
       )}
       <Elements.Hr />
       <Bio />
+
       <PostNavigator pageContext={pageContext} />
       {!!disqusShortName && (
         <Disqus
@@ -79,6 +84,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }

@@ -4,8 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
+  // 게시글 자세히보기에서 포맷터
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-
   return graphql(
     `
       {
@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 category
+                tags
               }
             }
             previous {

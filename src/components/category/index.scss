@@ -1,5 +1,10 @@
 @import '../../styles/variables.scss';
 
+.sidebar {
+  //   position: fixed;
+  //   left: 50px;
+}
+
 .category-container {
   position: sticky;
   position: -webkit-sticky;
@@ -40,6 +45,7 @@
 .category-container {
   scroll-behavior: smooth;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .my-smooth-container {
     scroll-behavior: auto;

@@ -3,7 +3,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 import './index.scss'
-
+// Post Footer
 export const Bio = forwardRef((props, ref) => {
   return <StaticQuery
     query={bioQuery}

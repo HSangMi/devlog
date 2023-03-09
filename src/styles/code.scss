@@ -61,13 +61,13 @@ pre[class*='language-'] {
   border-radius: 0.6em;
 }
 
-:not(pre) > code[class*='language-'],
+:not(pre)>code[class*='language-'],
 pre[class*='language-'] {
   background: #212121;
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
   padding: 0.1em 0.6em;
   border-radius: 0.2em;
   white-space: normal;
@@ -137,6 +137,7 @@ pre[class*='language-'] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
