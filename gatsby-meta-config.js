@@ -2,7 +2,7 @@ module.exports = {
   title: `32's Dev.log`,
   description: `Blog posted about DEVELOP LOG`,
   author: `han32`,
-  introduction: `게으르지만 움직이려고 노력중.`,
+  introduction: `끊임없는 성장을 추구하는 개발자입니다`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account

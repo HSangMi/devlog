@@ -17,6 +17,7 @@ import { Tags } from '../components/tags'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
+import '../styles/costom.scss'
 import 'katex/dist/katex.min.css'
 
 export default ({ data, pageContext, location }) => {
