@@ -6,9 +6,7 @@ draft: false
 tags: 
 - DesignPattern
 ---
-> 해당 노트는 [자바 디자인 패턴의 이해 - Gof Design Pattern](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4#curriculum)강의를 듣고 작성한 노트입니다.
 
-### 목표 
 <aside>
 💡 학습목표 <br/>
 `인터페이스` 개념을 이해한다  <br/>
@@ -23,34 +21,34 @@ tags:
 💡  기능에 대한 <span class="notion_sp"> 선언과 구현 분리</span><br/>
     기능의 <span class="notion_sp">사용 통로</span><br/>
 </aside>
+<br>
 
-- 예제
-    
-    ```java
-    // 인터페이스 선언 ---------------------------------------
-    public interface A_interface{
-    	// 기능에 선언
-    	public void fun_A();
+#### 예제 
+```java
+// 인터페이스 선언 ---------------------------------------
+public interface A_interface{
+    // 기능에 선언
+    public void fun_A();
+}
+
+// 인터페이스 구현 ---------------------------------------
+public class A_interfaceImpl implements A_interface{
+    @Override
+    public void func_A(){
+        System.out.println("AAA");
     }
-    
-    // 인터페이스 구현 ---------------------------------------
-    public class A_interfaceImpl implements A_interface{
-    	@Override
-    	public void func_A(){
-    		System.out.println("AAA");
-    	}
+}
+
+// 사용 --------------------------------------------------
+public class Main {
+    public static void main(String[] args){
+        A_interface ainterface = new A_interfaceImpl();
+        
+        // 통로
+        ainterface.func_A();
     }
-    
-    // 사용 --------------------------------------------------
-    public class Main {
-    	public static void main(String[] args){
-    		A_interface ainterface = new A_interfaceImpl();
-    		
-    		// 통로
-    		ainterface.func_A();
-    	}
-    }
-    ```
+}
+```
     
 
 ### 델리게이트
@@ -99,7 +97,7 @@ tags:
     
     ![Untitled](./images/StategyPattern_설계.png)
     
-- 예시
+#### 예제 
     - 신작 게임에서 캐릭터와 무기를 구현해보세요
     - 무기는 두가지 종류가 있습니다.(칼, 검)
     
@@ -167,3 +165,4 @@ tags:
     - 새로운 무기가 추가되었을 때, Weapon 구현클래스만 하나 추가해 주면 뚝딱!
 
 ---
+> 해당 노트는 [자바 디자인 패턴의 이해 - Gof Design Pattern](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4#curriculum)강의를 듣고 작성한 노트입니다.
