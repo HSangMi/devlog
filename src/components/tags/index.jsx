@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import './index.scss'
 
 export const Tags = ({ post }) => {
-  console.log(post);
   return (
     post.frontmatter.tags ?
       <div className="tags">
