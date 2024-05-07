@@ -1,7 +1,7 @@
 ---
 title: '1. Stategy Pattern'
 date: 2022-09-19 00:00:00
-category: 'DesignPattern'
+category: 'Knowledge/DesignPattern'
 draft: false
 tags: 
 - DesignPattern

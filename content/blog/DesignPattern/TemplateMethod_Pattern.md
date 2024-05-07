@@ -1,7 +1,7 @@
 ---
 title: '3. Template Method Pattern'
 date: 2022-09-22 12:00:00
-category: 'DesignPattern'
+category: 'Knowledge/DesignPattern'
 draft: false
 tags: 
 - DesignPattern

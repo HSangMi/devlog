@@ -1,7 +1,7 @@
 ---
 title: '2. Adapter Pattern'
 date: 2022-09-22 00:00:00
-category: 'DesignPattern'
+category: 'Knowledge/DesignPattern'
 draft: false
 tags: 
 - DesignPattern
