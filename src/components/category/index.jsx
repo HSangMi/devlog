@@ -29,15 +29,32 @@ export const Category = ({ categories, category, selectCategory }) => {
         }}
       >
         <Item title={'All'} selectedCategory={category} onClick={selectCategory} scrollToCenter={scrollToCenter} />
-        {categories.map((title, idx) => (
-          <Item
-            key={idx}
-            title={title}
-            selectedCategory={category}
-            onClick={selectCategory}
-            scrollToCenter={scrollToCenter}
-          />
-        ))}
+        {categories.map((title, idx) => {
+          let cArr = title.split('/');
+          if (cArr.length == 1) {
+            return (
+              <Item
+                key={idx}
+                title={title}
+                selectedCategory={category}
+                onClick={selectCategory}
+                scrollToCenter={scrollToCenter}
+                disable={true}
+              />
+            )
+          } else {
+            return (
+              <Item
+                key={idx}
+                title={title}
+                selectedCategory={category}
+                onClick={selectCategory}
+                scrollToCenter={scrollToCenter}
+                disable={false}
+              />
+            )
+          }
+        })}
       </ul>
     </div>
   )

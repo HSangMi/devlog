@@ -1,6 +1,6 @@
 import React, { useRef, useCallback, useEffect } from 'react'
 
-export const Item = ({ title, selectedCategory, onClick, scrollToCenter }) => {
+export const Item = ({ title, selectedCategory, onClick, scrollToCenter, disable }) => {
   const tabRef = useRef(null)
 
   const handleClick = useCallback(() => {
@@ -14,14 +14,15 @@ export const Item = ({ title, selectedCategory, onClick, scrollToCenter }) => {
     }
   }, [selectedCategory, tabRef])
 
+  let showTitle = title.split("/").pop();
   return (
     <li
       ref={tabRef}
-      className="item"
+      className={disable != true ? "item" : "item_group"}
       role="tab"
       aria-selected={selectedCategory === title ? 'true' : 'false'}
     >
-      <div onClick={handleClick}>{title}</div>
+      <div onClick={disable != true ? handleClick : null}>{showTitle}</div>
     </li>
   )
 }
