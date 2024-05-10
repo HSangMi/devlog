@@ -3,6 +3,8 @@ title: 'C++ Syntax/String'
 date: 2024-05-07
 category: 'Language/C++'
 draft: false
+tags: 
+- c++
 ---
 > C++로 알고리즘 문제를 해결하는데 필요했던 문법을 정리해 둔 것입니다.
 
