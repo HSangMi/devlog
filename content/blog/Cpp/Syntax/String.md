@@ -137,3 +137,35 @@ tags:
     // (반복횟수, char)
     string(3,'*'); // "***"
     ```
+
+# + StringStream
+
+- 문자열 자르기(split 구현)
+    ```cpp
+    #include<iostream>
+    #include<vector>
+    #include<string>
+    #include<sstream>
+    using namespace std;
+
+    // s : 문자열, d : 자를 구분자
+    vector<string> split(string s, char d){
+        vector<string> tokens;
+        stringstream ss;
+        string token;
+
+        while(getline(ss, token, d){
+            tokens.push_back(token);
+        }
+
+        return tokens;
+    }
+    int main(){
+       
+       // cin 앞에 사용했다면, 버퍼에 담긴 '\n' 지우기
+       // cin.ignore();
+        string s = getline(cin, s, '\n');   // getline(인풋스트립, 담을 문자열 변수, 구분자)
+
+        return 0;
+    }
+    ```
