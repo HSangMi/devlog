@@ -65,6 +65,7 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               inlineCodeMarker: '%',
+              showLineNumbers: true,  // 라인 번호 표시 활성화
             },
           },
           `gatsby-remark-copy-linked-files`,

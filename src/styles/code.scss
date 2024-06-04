@@ -206,3 +206,14 @@ pre[class*="language-"] {
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
 }
+// highlight랑 number랑 같이 쓸거라 추가한 css
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+// 정렬이 안맞아서 추가한 css
+.line-numbers .line-numbers-rows {
+  padding: 0em 0em 0em 0.5em;
+  margin: 1em 0em;
+  border-right: 1px solid #99999952;
+}
