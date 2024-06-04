@@ -206,14 +206,72 @@ pre[class*="language-"] {
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
 }
+
+.gatsby-highlight-code-line {
+  background-color: #9d9d9d3d;
+  display: block;
+  margin-right: -1em;
+  margin-left: -2.8em;
+  padding-right: 1em;
+  padding-left: 2.5em;
+  border-left: 0.25em solid #f99;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: #3b3b3b; //#fdf6e3; // 테마의 codeblock 컬러로 설정
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  // padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  // margin: 0;
+  // padding: 0;
+  // overflow: initial;
+  overflow: hidden;
+  float: left;
+  /* 1 */
+  min-width: 100%;
+  /* 2 */
+}
+
+
+
+
 // highlight랑 number랑 같이 쓸거라 추가한 css
 .gatsby-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 // 정렬이 안맞아서 추가한 css
 .line-numbers .line-numbers-rows {
   padding: 0em 0em 0em 0.5em;
-  margin: 1em 0em;
+  margin: 0.5em 0em;
   border-right: 1px solid #99999952;
 }
+
+// .line-numbers .line-numbers-rows span:nth-last-child(1),
+// .line-numbers .line-numbers-rows span:nth-last-child(2) {
+//   display: none;
+// }
+
+// 코드 넘버 추가하면서 코드블록에 스크롤 생겨서 추가
+// pre[class*="language-"].line-numbers {
+//   // padding-top: 2em;
+//   padding-bottom: 3em;
+// }
