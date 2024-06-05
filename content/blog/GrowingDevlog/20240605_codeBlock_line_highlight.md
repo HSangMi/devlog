@@ -1,5 +1,5 @@
 ---
-title: '[Gatsby] Prismjs 코드블록 개선하기 (4) Line HighLight 추가하기'
+title: '[Gatsby] Prismjs 코드블록 개선(4) Line HighLight 추가하기'
 date: 2024-06-05 18:00
 category: 'Dev/GrowingDevlog'
 draft: false

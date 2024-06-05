@@ -1,5 +1,5 @@
 ---
-title: '3. Template Method Pattern'
+title: '[DesignPattern] 3. Template Method Pattern'
 date: 2022-09-22 12:00:00
 category: 'Knowledge/DesignPattern'
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: 'C++ Syntax/String'
+title: '[C++] Syntax/String'
 date: 2024-05-07
 category: 'Language/C++'
 draft: false

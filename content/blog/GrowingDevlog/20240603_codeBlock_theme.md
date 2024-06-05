@@ -1,5 +1,5 @@
 ---
-title: '[Gatsby] Prismjs 코드블록 개선하기 (1) 테마'
+title: '[Gatsby] Prismjs 코드블록 개선(1) 테마'
 date: 2024-06-03 18:30
 category: 'Dev/GrowingDevlog'
 draft: false

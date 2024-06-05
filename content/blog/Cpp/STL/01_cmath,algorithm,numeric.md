@@ -1,5 +1,5 @@
 ---
-title: 'C++ STL/cmath, algorithm, numeric'
+title: '[C++] STL/cmath, algorithm, numeric'
 date: 2024-05-08
 category: 'Language/C++'
 draft: false

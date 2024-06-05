@@ -248,9 +248,6 @@ pre[class*="language-"] {
   /* 2 */
 }
 
-
-
-
 // highlight랑 number랑 같이 쓸거라 추가한 css
 .gatsby-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
@@ -264,14 +261,3 @@ pre[class*="language-"] {
   margin: 0.5em 0em;
   border-right: 1px solid #99999952;
 }
-
-// .line-numbers .line-numbers-rows span:nth-last-child(1),
-// .line-numbers .line-numbers-rows span:nth-last-child(2) {
-//   display: none;
-// }
-
-// 코드 넘버 추가하면서 코드블록에 스크롤 생겨서 추가
-// pre[class*="language-"].line-numbers {
-//   // padding-top: 2em;
-//   padding-bottom: 3em;
-// }
