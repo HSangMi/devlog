@@ -19,7 +19,8 @@ tags:
 ## 하이라이트 표시하기
 
   > 더 자세한 설정은 공식 문서에서 확인 가능합니다!
-  > [gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/)
+  > [gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/)  
+  > [markdown으로 설명이 알아보기 힘들 때 참고](https://unpkg.com/browse/gatsby-remark-prismjs@3.2.4/README.md)  
 
 ### 1. 플러그인 설치
 * prismjs 플러그인 설치, 이전 포스팅에서 설치하고 `package.json`에 이미있으면 생략
