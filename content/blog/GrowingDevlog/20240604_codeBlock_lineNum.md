@@ -1,7 +1,7 @@
 ---
 title: '[Gatsby] Prismjs 코드블록 개선(3) Line Numer 추가하기'
 date: 2024-06-04 19:30
-category: 'Dev/GrowingDevlog'
+category: 'Work & Dev/GrowingDevlog'
 draft: false
 tags:
     - Gatsby

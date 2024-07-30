@@ -1,5 +1,5 @@
 ---
-title: 'Knowledge'
-category: 'Knowledge'
+title: 'CS & Knowledge'
+category: 'CS & Knowledge'
 draft: false
 ---
